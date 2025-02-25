@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        form {
+            border: solid 1px;
+            width: 30%;
+            margin: 0 auto;
+            padding: 10px;
+            height: 40%;
+            box-shadow: 10px 10px 8px 8px rgb(207, 206, 207);
+        }
+        #submit_button{
+            background: none;
+            border: none;
+            border-radius: none;
+            padding: 12px 8px;
+            background-color:black ;
+            color: white;
+            cursor: pointer;
+            margin: 0 auto; 
+            width: 95%;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 auto;
+        } 
+        #name{
+            padding: 12px 8px;
+            width: 90%;
+        }
+        #email{
+            padding: 12px 8px;
+            width: 90%;
+        }
+        #password{
+            padding: 12px 8px;
+            width: 90%;
+        }
+        .hr-lines{
+            position: relative;
+            max-width: 500px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+       .hr-lines:before{
+            content:" ";
+            height: 2px;
+            width: 130px;
+            background: rgb(3, 3, 3);
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+
+       .hr-lines:after{
+            content:" ";
+            height: 2px;
+            width: 130px;
+            background: rgb(5, 4, 4);
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+        }
+        .social{
+            font-size: 40px;
+            text-align: center;
+            justify-content: center;
+            display: flex; gap: 50px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <p>Already have an account?<a href="signin.html" style="color: black;">Sign In</a></p>
+    <br>
+    <h1>Sign Up</h1><br>
+    <br>
+    <label for="name">Name:</label><br>
+    <br>
+    <input type="text" id="name" placeholder="Enter name"><br>
+    <br>
+    <label for="email">Email:</label><br>
+    <br>
+    <input type="email" id="email" placeholder="Enter email"><br>
+    <br>
+    <label for="password">Password:</label><br>
+    <br>
+    <input type="password" id="password" placeholder="Enter password"><br>
+    <br>
+    <input type="checkbox" id="Terms"> <label for=" text">I've Read And Agree With <a href="Terms Of Service">Terms Of Service </a>And Our <a href="Privacy Policy">Privacy Policy</a></label><br>
+    <br> 
+    <button type="submit" id="submit_button">Sign Up</button><br>
+    <br>
+    <br>
+    <h2 class="hr-lines">Or Sign Up With</h2>
+    <br>
+    <div class="social">
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-facebook"></i>
+    </div>
+    </form>
+</body>
+</html>
